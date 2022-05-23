@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072696FA2836941E0074E736 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 072696F92836941E0074E736 /* GoogleService-Info.plist */; };
+		072696FD2836952B0074E736 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 072696FC2836952B0074E736 /* FirebaseAuth */; };
+		072697002836A20D0074E736 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 072696FF2836A20D0074E736 /* GoogleSignIn */; };
 		07ABD3C4282EEFE800A50FC3 /* FlylinkersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ABD3C3282EEFE800A50FC3 /* FlylinkersApp.swift */; };
 		07ABD3C6282EEFE800A50FC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ABD3C5282EEFE800A50FC3 /* ContentView.swift */; };
 		07ABD3C8282EEFEC00A50FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07ABD3C7282EEFEC00A50FC3 /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		072696F92836941E0074E736 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		072697012836A2AB0074E736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		07ABD3C0282EEFE800A50FC3 /* Flylinkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flylinkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ABD3C3282EEFE800A50FC3 /* FlylinkersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlylinkersApp.swift; sourceTree = "<group>"; };
 		07ABD3C5282EEFE800A50FC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072696FD2836952B0074E736 /* FirebaseAuth in Frameworks */,
+				072697002836A20D0074E736 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +58,12 @@
 		07ABD3C2282EEFE800A50FC3 /* Flylinkers */ = {
 			isa = PBXGroup;
 			children = (
+				072697012836A2AB0074E736 /* Info.plist */,
 				07ABD3C3282EEFE800A50FC3 /* FlylinkersApp.swift */,
 				07ABD3C5282EEFE800A50FC3 /* ContentView.swift */,
 				07ABD3C7282EEFEC00A50FC3 /* Assets.xcassets */,
 				07ABD3C9282EEFEC00A50FC3 /* Preview Content */,
+				072696F92836941E0074E736 /* GoogleService-Info.plist */,
 			);
 			path = Flylinkers;
 			sourceTree = "<group>";
@@ -83,6 +92,10 @@
 			dependencies = (
 			);
 			name = Flylinkers;
+			packageProductDependencies = (
+				072696FC2836952B0074E736 /* FirebaseAuth */,
+				072696FF2836A20D0074E736 /* GoogleSignIn */,
+			);
 			productName = Flylinkers;
 			productReference = 07ABD3C0282EEFE800A50FC3 /* Flylinkers.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,10 @@
 				Base,
 			);
 			mainGroup = 07ABD3B7282EEFE800A50FC3;
+			packageReferences = (
+				072696FB2836952B0074E736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				072696FE2836A20D0074E736 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 07ABD3C1282EEFE800A50FC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +144,7 @@
 			files = (
 				07ABD3CB282EEFEC00A50FC3 /* Preview Assets.xcassets in Resources */,
 				07ABD3C8282EEFEC00A50FC3 /* Assets.xcassets in Resources */,
+				072696FA2836941E0074E736 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +285,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Flylinkers/Preview Content\"";
+				DEVELOPMENT_TEAM = L96HQ888PN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Flylinkers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,13 +317,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Flylinkers/Preview Content\"";
+				DEVELOPMENT_TEAM = L96HQ888PN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Flylinkers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +363,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		072696FB2836952B0074E736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		072696FE2836A20D0074E736 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		072696FC2836952B0074E736 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 072696FB2836952B0074E736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		072696FF2836A20D0074E736 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 072696FE2836A20D0074E736 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07ABD3B8282EEFE800A50FC3 /* Project object */;
 }
