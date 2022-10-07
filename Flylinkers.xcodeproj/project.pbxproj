@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0719411628DA277700CB53EB /* Flylinkers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flylinkers.entitlements; sourceTree = "<group>"; };
 		072696F92836941E0074E736 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		072697012836A2AB0074E736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		07ABD3C0282EEFE800A50FC3 /* Flylinkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flylinkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +59,7 @@
 		07ABD3C2282EEFE800A50FC3 /* Flylinkers */ = {
 			isa = PBXGroup;
 			children = (
+				0719411628DA277700CB53EB /* Flylinkers.entitlements */,
 				072697012836A2AB0074E736 /* Info.plist */,
 				07ABD3C3282EEFE800A50FC3 /* FlylinkersApp.swift */,
 				07ABD3C5282EEFE800A50FC3 /* ContentView.swift */,
@@ -282,10 +284,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Flylinkers/Flylinkers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Flylinkers/Preview Content\"";
-				DEVELOPMENT_TEAM = L96HQ888PN;
+				DEVELOPMENT_TEAM = 953Z7FUU3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flylinkers/Info.plist;
@@ -301,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flylinkers.Flylinkers;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flylinkers.App-FlyLinkersIOs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,10 +317,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Flylinkers/Flylinkers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Flylinkers/Preview Content\"";
-				DEVELOPMENT_TEAM = L96HQ888PN;
+				DEVELOPMENT_TEAM = 953Z7FUU3W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flylinkers/Info.plist;
@@ -333,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flylinkers.Flylinkers;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flylinkers.App-FlyLinkersIOs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
